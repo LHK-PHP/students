@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="点我" onclick="my()">
+</body>
+<script>
+    var f;
+    function my() {
+        function uu(){
+            alert("三秒后我会出来")
+        }
+        f  = setTimeout(uu,4000);
+
+        clearTimeout(f);
+    }
+</script>
+</html>
